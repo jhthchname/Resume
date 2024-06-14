@@ -33,7 +33,7 @@ const App: React.FC = () => {
           backgroundColor: "#ffff",
         }}
       >
-        <div style={{ fontSize: "24px", fontWeight: "bold" }}>
+        <div style={{ color:"#1890ff", fontSize: "24px", fontWeight: "bold" }}>
           Resume
         </div>
         <div className="header">
