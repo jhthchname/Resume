@@ -1,15 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { Layout, Drawer, Button, Anchor } from "antd";
+import { Layout, Drawer, Button, Anchor, BackTop } from "antd";
 import Profile from "./components/Profile";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import "./globals.css";
-import { MenuOutlined} from '@ant-design/icons';
+import 'antd/dist/antd.css';
+import { MenuOutlined } from "@ant-design/icons";
 
-const { Content, Header } = Layout;
+const { Content, Header, Footer } = Layout;
 const { Link } = Anchor;
 
 const App: React.FC = () => {
@@ -33,7 +34,7 @@ const App: React.FC = () => {
           backgroundColor: "#ffff",
         }}
       >
-        <div style={{ color:"#1890ff", fontSize: "24px", fontWeight: "bold" }}>
+        <div style={{ color: "#1890ff", fontSize: "24px", fontWeight: "bold" }}>
           Resume
         </div>
         <div className="header">
@@ -49,7 +50,7 @@ const App: React.FC = () => {
               </div>
               <div className="mobileVisible">
                 <Button type="primary" onClick={showDrawer}>
-                <MenuOutlined />
+                  <MenuOutlined />
                 </Button>
                 <Drawer
                   placement="right"
