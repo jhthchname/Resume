@@ -49,7 +49,7 @@ const Skills = () => {
             <h1>Skills</h1>
           </div>
           <div className="contentHolder">
-            <p>มีความรู้และใช้งานเบื้องต้นในการใช้ภาษา</p>
+            <p>มีความรู้และใช้งานเบื้องต้นสำหรับภาษา</p>
           </div>
           <Row gutter={[24, 16]}>
             {items.map((item) => {
