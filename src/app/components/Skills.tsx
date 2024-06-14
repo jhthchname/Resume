@@ -8,16 +8,15 @@ const Skills = () => {
     <>
       <Row gutter={16}>
         <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-          <div id="ความสามารถ">
+          <div id="skills">
             <div
-              id="ความสามารถ"
               style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
                 flexDirection: "column",
                 width: "100vw",
-                height: "70vh",
+                height: "100vh",
                 background: "white",
               }}
             >

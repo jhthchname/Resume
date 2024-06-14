@@ -14,7 +14,7 @@ const Profile = () => {
   return (
     <Row gutter={16}>
       <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-        <div id="ข้อมูลส่วนตัว">
+        <div id="profile">
           <div
             style={{
               display: "flex",

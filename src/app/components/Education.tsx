@@ -4,22 +4,21 @@ import { Steps, Row, Col } from "antd";
 const Education: React.FC = () => (
   <Row gutter={16}>
     <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-      <div id="ประวัติการศึกษา">
+      <div id="education">
         <div
-          id="ความสามารถ"
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             flexDirection: "column",
             width: "100vw",
-            height: "70vh",
+            height: "100vh",
             background: "white",
           }}
         >
           <div
             style={{
-              maxWidth: "700px",
+              maxWidth: "600px",
               width: "100%",
               maxHeight: "300px",
               height: "100%",
@@ -41,7 +40,7 @@ const Education: React.FC = () => (
                 {
                   title: "2564 - ปัจจุบัน",
                   description: (
-                    <span style={{ whiteSpace: "nowrap", lineHeight: "5" }}>
+                    <span style={{ whiteSpace: "nowrap", lineHeight: "2.5" }}>
                       กำลังศึกษาระดับปริญญาตรี ชั้นปีที่ 3 คณะวิศวกรรมศาสตร์
                       สาขาคอมพิวเตอร์และหุ่นยนต์
                     </span>

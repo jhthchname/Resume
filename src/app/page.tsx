@@ -37,18 +37,18 @@ const App: React.FC = () => (
           items={[
             {
               key: "part-1",
-              href: "#ข้อมูลส่วนตัว",
-              title: "ข้อมูลส่วนตัว",
+              href: "#profile",
+              title: "Profile",
             },
             {
               key: "part-2",
-              href: "#ประวัติการศึกษา",
-              title: "ประวัติการศึกษา",
+              href: "#education",
+              title: "Education",
             },
             {
               key: "part-3",
-              href: "#ความสามารถ",
-              title: "ความสามารถ",
+              href: "#skills",
+              title: "Skills",
             },
           ]}
         />
