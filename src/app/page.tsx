@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Layout, Drawer, Button, Anchor, BackTop } from "antd";
+import { Layout, Drawer, Button, Anchor } from "antd";
 import Profile from "./components/Profile";
 import Contact from "./components/Contact";
 import Education from "./components/Education";
@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 import "./globals.css";
 import { MenuOutlined } from "@ant-design/icons";
 
-const { Content, Header, Footer } = Layout;
+const { Content, Header } = Layout;
 const { Link } = Anchor;
 
 const App: React.FC = () => {
