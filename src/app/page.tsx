@@ -1,21 +1,13 @@
-"use client";
+'use client';
 
 import React from "react";
-import { Layout, Row, Col, Anchor } from "antd";
-import dynamic from "next/dynamic";
+import { Layout, Anchor } from "antd";
+import Profile from "./components/Profile";
+import Education from "./components/Education";
+import Skills from "./components/Skills";
 import "./globals.css";
 
 const { Content } = Layout;
-
-const Profile = dynamic(() => import("./components/Profile"), {
-  ssr: false,
-});
-const Education = dynamic(() => import("./components/Education"), {
-  ssr: false,
-});
-const Skills = dynamic(() => import("./components/Skills"), {
-  ssr: false,
-});
 
 const App: React.FC = () => (
   <Layout>
@@ -62,31 +54,9 @@ const App: React.FC = () => (
         />
       </div>
       <div className="site-layout-content">
-        <Row gutter={16}>
-          <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-            <div id="ข้อมูลส่วนตัว">
-              <Profile />
-            </div>
-          </Col>
-        </Row>
-      </div>
-      <div>
-        <Row gutter={16}>
-          <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-            <div id="ประวัติการศึกษา">
-              <Education />
-            </div>
-          </Col>
-        </Row>
-      </div>
-      <div>
-        <Row gutter={16}>
-          <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-            <div id="ความสามารถ">
-              <Skills />
-            </div>
-          </Col>
-        </Row>
+        <Profile />
+        <Education />
+        <Skills />
       </div>
     </Content>
   </Layout>
