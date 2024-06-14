@@ -10,7 +10,7 @@ import {
 
 const { Title, Paragraph } = Typography;
 
-const ProfileCard = () => {
+const Profile = () => {
   return (
     <div
       style={{
@@ -31,19 +31,19 @@ const ProfileCard = () => {
         style={{ marginRight: "20px" }}
       />
       <div>
-        <Title level={4} style={{ marginBottom: "0" }}>
+        <Title level={4}>
           จิณณ์ฐิชา สุขเชาว์ฤทธิไกร
         </Title>
-        <Paragraph style={{ marginBottom: "5px" }}>
+        <Paragraph>
           <PhoneOutlined /> 083 813 7545
         </Paragraph>
-        <Paragraph style={{ marginBottom: "5px" }}>
+        <Paragraph>
           <MailOutlined /> jhinthicha.sukc@bumail.net
         </Paragraph>
-        <Paragraph style={{ marginBottom: "5px" }}>
+        <Paragraph>
           <InstagramOutlined /> jhinthicha_name
         </Paragraph>
-        <Paragraph style={{ marginBottom: "0" }}>
+        <Paragraph>
           <EnvironmentOutlined /> 15/45 หมู่ 5 ซอย รังสิตภิรมย์, ตำบล คลองหนึ่ง,
           อำเภอ คลองหลวง, จังหวัด ปทุมธานี 12120
         </Paragraph>
@@ -52,4 +52,4 @@ const ProfileCard = () => {
   );
 };
 
-export default ProfileCard;
+export default Profile;

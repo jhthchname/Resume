@@ -7,13 +7,13 @@ import "./globals.css";
 
 const { Content } = Layout;
 
-const ProfileCard = dynamic(() => import("./components/ProfileCard"), {
+const Profile = dynamic(() => import("./components/Profile"), {
   ssr: false,
 });
-const EducationCard = dynamic(() => import("./components/EducationCard"), {
+const Education = dynamic(() => import("./components/Education"), {
   ssr: false,
 });
-const SkillsCard = dynamic(() => import("./components/SkillsCard"), {
+const Skills = dynamic(() => import("./components/Skills"), {
   ssr: false,
 });
 
@@ -65,7 +65,7 @@ const App: React.FC = () => (
         <Row gutter={16}>
         <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
             <div id="ข้อมูลส่วนตัว">
-              <ProfileCard />
+              <Profile />
             </div>
           </Col>
         </Row>
@@ -74,7 +74,7 @@ const App: React.FC = () => (
         <Row gutter={16}>
         <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
             <div id="ประวัติการศึกษา">
-              <EducationCard />
+              <Education />
             </div>
           </Col>
         </Row>
@@ -83,7 +83,7 @@ const App: React.FC = () => (
         <Row gutter={16}>
         <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
             <div id="ความสามารถ">
-              <SkillsCard />
+              <Skills />
             </div>
           </Col>
         </Row>

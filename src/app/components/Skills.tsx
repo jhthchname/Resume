@@ -3,7 +3,7 @@ import React from "react";
 
 const { Title } = Typography;
 
-const SkillsCard = () => {
+const Skills = () => {
   return (
     <>
       <div
@@ -32,4 +32,4 @@ const SkillsCard = () => {
   );
 };
 
-export default SkillsCard;
+export default Skills;
