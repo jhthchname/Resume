@@ -1,39 +1,78 @@
-import { Typography, Row, Col } from "antd";
 import React from "react";
 
-const { Title } = Typography;
+import { Row, Col } from "antd";
 
+const items = [
+  {
+    key: "1",
+    src: "C_Logo",
+    title: "C",
+  },
+  {
+    key: "2",
+    src: "Python_Logo",
+    title: "Python",
+  },
+  {
+    key: "3",
+    src: "Java_Logo",
+    title: "Java",
+  },
+  {
+    key: "4",
+    src: "JavaScript_Logo",
+    title: "JavaScript",
+  },
+  {
+    key: "5",
+    src: "HTML_Logo",
+    title: "Html",
+  },
+  {
+    key: "6",
+    src: "CSS_Logo",
+    title: "CSS",
+  },
+];
 const Skills = () => {
   return (
-    <>
-      <Row gutter={16}>
-        <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
-          <div id="skills">
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "column",
-                width: "100vw",
-                height: "100vh",
-                background: "white",
-              }}
-            >
-              <Title level={2}>ความสามารถ</Title>
-              <ul>
-                <li>ภาษาไทย: ดีมาก</li>
-                <li>ภาษาอังกฤษ: พอใช้ (Fair)</li>
-                <li>
-                  ทักษะการใช้คอมพิวเตอร์: มีความรู้และใช้งานเบื้องต้น C Python
-                  Java JavaScipt Html Css
-                </li>
-              </ul>
-            </div>
+    <div id="skills" className="block aboutBlock">
+      <div
+        style={{
+          width: "100vw",
+          height: "70vh",
+          background: "white",
+        }}
+      >
+        <div className="container-fluid">
+          <div className="titleHolder">
+            <h1>Skills</h1>
           </div>
-        </Col>
-      </Row>
-    </>
+          <div className="contentHolder">
+            <p>มีความรู้และใช้งานเบื้องต้นในการใช้ภาษา</p>
+          </div>
+          <Row gutter={[24, 16]}>
+            {items.map((item) => {
+              return (
+                <Col md={{ span: 4 }} key={item.key}>
+                  <div className="content">
+                    <div className="icon">
+                    <div className="changeSize">
+                    <img
+                      src={`${item.src}.png`}
+                      alt={item.title}
+                      style={{ width: "100px" }} />
+                    </div>
+                    <h3>{item.title}</h3>
+                  </div>
+                  </div>
+                </Col>
+              );
+            })}
+          </Row>
+        </div>
+      </div>
+    </div>
   );
 };
 

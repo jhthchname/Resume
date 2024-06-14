@@ -1,55 +1,60 @@
 import React from "react";
-import { Avatar, Typography, Row, Col } from "antd";
-import {
-  UserOutlined,
-  MailOutlined,
-  PhoneOutlined,
-  EnvironmentOutlined,
-  InstagramOutlined,
-} from "@ant-design/icons";
+import { Avatar, Typography, Row, Col, Space, Card } from "antd";
 
-const { Title, Paragraph } = Typography;
+const { Title } = Typography;
 
 const Profile = () => {
   return (
-    <Row gutter={16}>
+    <Row
+      gutter={[16, 16]}
+    >
       <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
         <div id="profile">
-          <div
+          <Card
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              width: "100vw",
-              height: "100vh",
-              background: "white",
+              width: 700,
+              background: "#1890ff",
             }}
           >
-            <Avatar
-              shape="square"
-              size={230}
-              src="Profile.png"
-              icon={<UserOutlined />}
-              style={{ marginRight: "20px" }}
-            />
-            <div>
-              <Title level={4}>จิณณ์ฐิชา สุขเชาว์ฤทธิไกร</Title>
-              <Paragraph>
-                <PhoneOutlined /> 083 813 7545
-              </Paragraph>
-              <Paragraph>
-                <MailOutlined /> jhinthicha.sukc@bumail.net
-              </Paragraph>
-              <Paragraph>
-                <InstagramOutlined /> jhinthicha_name
-              </Paragraph>
-              <Paragraph>
-                <EnvironmentOutlined /> 15/45 หมู่ 5 ซอย รังสิตภิรมย์, ตำบล
-                คลองหนึ่ง, อำเภอ คลองหลวง, จังหวัด ปทุมธานี 12120
-              </Paragraph>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "row",
+                width: "100%",
+                height: "100%",
+                background: "#1890ff",
+              }}
+            >
+              <Space
+                direction="horizontal"
+                size="middle"
+                style={{ display: "flex" }}
+              >
+                <Avatar
+                  shape="square"
+                  size={250}
+                  src="Profile.png"
+                  style={{ marginRight: "20px" }}
+                />
+                <div>
+                  <Title level={2} style={{ color: "white" }}>
+                    จิณณ์ฐิชา สุขเชาว์ฤทธิไกร
+                  </Title>
+                  <Title level={3} style={{ color: "white" }}>
+                    Jhinthicha Sukchaoritthikrai
+                  </Title>
+                  <Title level={4} style={{ color: "white" }}>
+                    เกิดวันศุกร์ที่ 7 มีนาคม พ.ศ. 2546
+                  </Title>
+                  <Title level={4} style={{ color: "white" }}>
+                    อายุ 21 ปี
+                  </Title>
+                </div>
+              </Space>
             </div>
-          </div>
+          </Card>
         </div>
       </Col>
     </Row>

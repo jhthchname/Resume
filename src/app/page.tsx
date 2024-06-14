@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Layout, Drawer, Button, Anchor } from "antd";
 import Profile from "./components/Profile";
+import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import "./globals.css";
@@ -32,7 +33,7 @@ const App: React.FC = () => {
           backgroundColor: "#ffff",
         }}
       >
-        <div style={{ color: "#191970", fontSize: "24px", fontWeight: "bold" }}>
+        <div style={{ fontSize: "24px", fontWeight: "bold" }}>
           Resume
         </div>
         <div className="header">
@@ -41,6 +42,7 @@ const App: React.FC = () => {
               <div className="mobileHidden">
                 <Anchor targetOffset={65}>
                   <Link href="#profile" title="Profile" />
+                  <Link href="#contact" title="Contact" />
                   <Link href="#education" title="Education" />
                   <Link href="#skills" title="Skills" />
                 </Anchor>
@@ -57,7 +59,8 @@ const App: React.FC = () => {
                 >
                   <Anchor targetOffset={65}>
                     <Link href="#profile" title="Profile" />
-                    <Link href="#education" title="Education" />
+                    <Link href="#contact" title="Contact" />
+                    <Link href="#ducation" title="Education" />
                     <Link href="#skills" title="Skills" />
                   </Anchor>
                 </Drawer>
@@ -69,6 +72,7 @@ const App: React.FC = () => {
       <Content style={{ padding: "0" }}>
         <div className="site-layout-content">
           <Profile />
+          <Contact />
           <Education />
           <Skills />
         </div>
