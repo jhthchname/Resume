@@ -12,14 +12,14 @@ const { Content, Header } = Layout;
 const { Link } = Anchor;
 
 const App: React.FC = () => {
-  const [visible, setVisible] = useState<boolean>(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   const showDrawer = (): void => {
-    setVisible(true);
+    setOpen(true);
   };
 
   const onClose = (): void => {
-    setVisible(false);
+    setOpen(false);
   };
 
   return (
@@ -53,7 +53,7 @@ const App: React.FC = () => {
                   placement="right"
                   closable={false}
                   onClose={onClose}
-                  visible={visible}
+                  open={open}
                 >
                   <Anchor targetOffset={65}>
                     <Link href="#profile" title="Profile" />
