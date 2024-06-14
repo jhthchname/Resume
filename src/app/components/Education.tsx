@@ -28,23 +28,17 @@ const Education: React.FC = () => (
               progressDot
               current={1}
               direction="vertical"
+              responsive={true}
               items={[
                 {
                   title: "2561 - 2563",
-                  description: (
-                    <span style={{ whiteSpace: "nowrap", lineHeight: "2.5" }}>
-                      โรงเรียนสามร้อยยอดวิทยาคม สายวิทยาศาสตร์ - คณิตศาสตร์
-                    </span>
-                  ),
+                  description:
+                    "โรงเรียนสามร้อยยอดวิทยาคม สายวิทยาศาสตร์ - คณิตศาสตร์",
                 },
                 {
                   title: "2564 - ปัจจุบัน",
-                  description: (
-                    <span style={{ whiteSpace: "nowrap", lineHeight: "2.5" }}>
-                      กำลังศึกษาระดับปริญญาตรี ชั้นปีที่ 3 คณะวิศวกรรมศาสตร์
-                      สาขาคอมพิวเตอร์และหุ่นยนต์
-                    </span>
-                  ),
+                  description:
+                    "กำลังศึกษาระดับปริญญาตรี ชั้นปีที่ 3 คณะวิศวกรรมศาสตร์ สาขาคอมพิวเตอร์และหุ่นยนต์",
                 },
               ]}
               style={{ width: "100%", height: "300px" }}
