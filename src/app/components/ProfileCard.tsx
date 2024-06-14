@@ -16,6 +16,8 @@ const ProfileCard = () => {
       style={{
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
         width: "100vw",
         height: "100vh",
         background: "white",
