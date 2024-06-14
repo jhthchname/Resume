@@ -63,7 +63,7 @@ const App: React.FC = () => (
       </div>
       <div className="site-layout-content">
         <Row gutter={16}>
-        <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
+          <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
             <div id="ข้อมูลส่วนตัว">
               <Profile />
             </div>
@@ -72,7 +72,7 @@ const App: React.FC = () => (
       </div>
       <div>
         <Row gutter={16}>
-        <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
+          <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
             <div id="ประวัติการศึกษา">
               <Education />
             </div>
@@ -81,7 +81,7 @@ const App: React.FC = () => (
       </div>
       <div>
         <Row gutter={16}>
-        <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
+          <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
             <div id="ความสามารถ">
               <Skills />
             </div>

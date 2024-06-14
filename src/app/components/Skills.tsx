@@ -14,7 +14,7 @@ const Skills = () => {
           alignItems: "center",
           flexDirection: "column",
           width: "100vw",
-          height: "100vh",
+          height: "70vh",
           background: "white",
         }}
       >
