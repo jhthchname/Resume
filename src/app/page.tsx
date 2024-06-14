@@ -7,7 +7,6 @@ import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import "./globals.css";
-import 'antd/dist/antd.css';
 import { MenuOutlined } from "@ant-design/icons";
 
 const { Content, Header, Footer } = Layout;
