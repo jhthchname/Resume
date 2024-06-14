@@ -7,13 +7,44 @@ body {
   min-height: 280px;
 }
 
-@media screen and (max-width: 768px) {
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
 
+.my-custom-anchor .ant-anchor-link-title {
+  color:#191970;
+  font-size: 18px;
+}
 
+.header .ant-anchor {
+  display: flex;
+}
 
+.mobileVisible {
+  display: none;
+}
+
+.mobileHidden {
+  display: block;
+}
+
+@media only screen and (max-width: 991px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1.14);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .pricingBlock .ant-row > div:nth-child(2) .ant-list-item {
+    transform: scale(1);
+  }
+
+  .mobileVisible {
+    display: block;
+  }
+  
+  .mobileHidden {
+    display: none;
+  }
+}

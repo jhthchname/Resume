@@ -1,65 +1,80 @@
-'use client';
+"use client";
 
-import React from "react";
-import { Layout, Anchor } from "antd";
+import React, { useState } from "react";
+import { Layout, Drawer, Button, Anchor } from "antd";
 import Profile from "./components/Profile";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import "./globals.css";
+import { MenuOutlined} from '@ant-design/icons';
 
-const { Content } = Layout;
+const { Content, Header } = Layout;
+const { Link } = Anchor;
 
-const App: React.FC = () => (
-  <Layout>
-    <div
-      style={{
-        backgroundColor: "#ffff",
-        padding: "10px",
-        textAlign: "left",
-        paddingLeft: "20px",
-      }}
-    >
-      <div style={{ color: "#191970", fontSize: "24px", fontWeight: "bold" }}>
-        Resume
-      </div>
-    </div>
-    <Content style={{ padding: "0" }}>
-      <div
+const App: React.FC = () => {
+  const [visible, setVisible] = useState<boolean>(false);
+
+  const showDrawer = (): void => {
+    setVisible(true);
+  };
+
+  const onClose = (): void => {
+    setVisible(false);
+  };
+
+  return (
+    <Layout>
+      <Header
         style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
           backgroundColor: "#ffff",
-          padding: "10px",
-          textAlign: "left",
-          paddingLeft: "20px",
         }}
       >
-        <Anchor
-          direction="horizontal"
-          items={[
-            {
-              key: "part-1",
-              href: "#profile",
-              title: "Profile",
-            },
-            {
-              key: "part-2",
-              href: "#education",
-              title: "Education",
-            },
-            {
-              key: "part-3",
-              href: "#skills",
-              title: "Skills",
-            },
-          ]}
-        />
-      </div>
-      <div className="site-layout-content">
-        <Profile />
-        <Education />
-        <Skills />
-      </div>
-    </Content>
-  </Layout>
-);
+        <div style={{ color: "#191970", fontSize: "24px", fontWeight: "bold" }}>
+          Resume
+        </div>
+        <div className="header">
+          <div className="logo">
+            <div className="my-custom-anchor ">
+              <div className="mobileHidden">
+                <Anchor targetOffset={65}>
+                  <Link href="#profile" title="Profile" />
+                  <Link href="#education" title="Education" />
+                  <Link href="#skills" title="Skills" />
+                </Anchor>
+              </div>
+              <div className="mobileVisible">
+                <Button type="primary" onClick={showDrawer}>
+                <MenuOutlined />
+                </Button>
+                <Drawer
+                  placement="right"
+                  closable={false}
+                  onClose={onClose}
+                  visible={visible}
+                >
+                  <Anchor targetOffset={65}>
+                    <Link href="#profile" title="Profile" />
+                    <Link href="#education" title="Education" />
+                    <Link href="#skills" title="Skills" />
+                  </Anchor>
+                </Drawer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Header>
+      <Content style={{ padding: "0" }}>
+        <div className="site-layout-content">
+          <Profile />
+          <Education />
+          <Skills />
+        </div>
+      </Content>
+    </Layout>
+  );
+};
 
 export default App;
