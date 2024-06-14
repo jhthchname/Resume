@@ -9,19 +9,23 @@ const EducationCard = () => {
       <div
         id="ประวัติการศึกษา"
         style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          flexDirection: "column",
           width: "100vw",
           height: "100vh",
-          background: "white"
+          background: "white",
         }}
       >
         <Title level={2}>ประวัติการศึกษา</Title>
-        <Paragraph>
+        <Paragraph style={{ width: "37%" }}> {/* Adjust width to ensure alignment */}
           <strong>มหาวิทยาลัยกรุงเทพ</strong>
           <br />
           กำลังศึกษาระดับปริญญาตรี ชั้นปีที่ 3<br />
           คณะวิศวกรรมศาสตร์ สาขาคอมพิวเตอร์และหุ่นยนต์
         </Paragraph>
-        <Paragraph>
+        <Paragraph style={{ width: "37%" }}> {/* Adjust width to ensure alignment */}
           <strong>โรงเรียนสามร้อยยอดวิทยาคม</strong>
           <br />
           สายวิทยาศาสตร์ - คณิตศาสตร์
