@@ -5,7 +5,7 @@ const { Title } = Typography;
 
 const Profile = () => {
   return (
-    <Row gutter={[16, 16]} justify="center" style={{ padding: "20px", height:"100vh" }}>
+    <Row gutter={[16, 16]} justify="center" align="middle" style={{ padding: "20px", height:"100vh" }}>
       <Col xs={{ span: 24 }} sm={{ span: 18 }} md={{ span: 16 }} lg={{ span: 12 }}>
         <div id="profile">
           <div
