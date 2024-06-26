@@ -14,15 +14,15 @@ const Profile = () => {
 
   const avatarSize = isLargeScreen ? 400 : isMediumScreen ? 350 : 300;
   const titleFontSize = isLargeScreen
+    ? "60px"
+    : isMediumScreen
+    ? "40px"
+    : "30px";
+  const subTitleFontSize = isLargeScreen
     ? "40px"
     : isMediumScreen
-    ? "30px"
-    : "20px";
-  const subTitleFontSize = isLargeScreen
     ? "24px"
-    : isMediumScreen
-    ? "18px"
-    : "16px";
+    : "18px";
 
   return (
     <Row
