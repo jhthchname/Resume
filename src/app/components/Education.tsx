@@ -29,7 +29,7 @@ const Education: React.FC = () => (
         >
           <div
             style={{
-              maxWidth: "800px",
+              maxWidth: "600px",
               width: "100%",
               maxHeight: "400px",
               height: "100%",
@@ -44,19 +44,19 @@ const Education: React.FC = () => (
               responsive={true}
               items={[
                 {
-                  title: <div style={{ fontSize: "24px" }}>2561 - 2563</div>,
+                  title: <div style={{ fontSize: "20px" }}>2561 - 2563</div>,
                   description: (
-                    <div style={{ fontSize: "20px" }}>
+                    <div style={{ fontSize: "18px" }}>
                       โรงเรียนสามร้อยยอดวิทยาคม สายวิทยาศาสตร์ - คณิตศาสตร์
                     </div>
                   ),
                 },
                 {
                   title: (
-                    <div style={{ fontSize: "24px" }}>2564 - ปัจจุบัน</div>
+                    <div style={{ fontSize: "20px" }}>2564 - ปัจจุบัน</div>
                   ),
                   description: (
-                    <div style={{ fontSize: "20px" }}>
+                    <div style={{ fontSize: "18px" }}>
                       กำลังศึกษาระดับปริญญาตรี ชั้นปีที่ 3 คณะวิศวกรรมศาสตร์
                       สาขาคอมพิวเตอร์และหุ่นยนต์
                     </div>
