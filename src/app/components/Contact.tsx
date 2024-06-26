@@ -6,6 +6,7 @@ import {
   InstagramOutlined,
   FacebookOutlined,
 } from "@ant-design/icons";
+import { motion } from "framer-motion";
 
 const { Paragraph } = Typography;
 
@@ -21,24 +22,80 @@ const Contact = () => {
               justifyContent: "center",
               flexDirection: "column",
               width: "100vw",
-              height: "80vh",
+              height: "100vh",
               background: "white",
             }}
           >
-            <div>
-              <Paragraph style={{ fontSize: "24px", fontWeight: "bold" }}>
-                <PhoneOutlined style={{ color: "#1890ff", fontSize: "30px" }} /> 083 813 7545
+            <motion.div
+              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ x: -100, opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Paragraph
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
+                <PhoneOutlined
+                  style={{
+                    color: "#1890ff",
+                    fontSize: "30px",
+                    marginRight: "10px",
+                  }}
+                />{" "}
+                083 813 7545
               </Paragraph>
-              <Paragraph style={{ fontSize: "24px", fontWeight: "bold" }}>
-                <MailOutlined style={{ color: "#1890ff", fontSize: "30px" }}/> jhinthicha.sukc@bumail.net
+              <Paragraph
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
+                <MailOutlined
+                  style={{
+                    color: "#1890ff",
+                    fontSize: "30px",
+                    marginRight: "10px",
+                  }}
+                />{" "}
+                jhinthicha.sukc@bumail.net
               </Paragraph>
-              <Paragraph style={{ fontSize: "24px", fontWeight: "bold" }}>
-                <InstagramOutlined style={{ color: "#1890ff", fontSize: "30px" }} /> jhinthicha_name
+              <Paragraph
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
+                <InstagramOutlined
+                  style={{
+                    color: "#1890ff",
+                    fontSize: "30px",
+                    marginRight: "10px",
+                  }}
+                />{" "}
+                jhinthicha_name
               </Paragraph>
-              <Paragraph style={{ fontSize: "24px", fontWeight: "bold" }}>
-                <FacebookOutlined style={{ color: "#1890ff", fontSize: "30px" }}/> Jhinthicha Sukchaoritthikrai
+              <Paragraph
+                style={{
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  marginBottom: "20px",
+                }}
+              >
+                <FacebookOutlined
+                  style={{
+                    color: "#1890ff",
+                    fontSize: "30px",
+                    marginRight: "10px",
+                  }}
+                />{" "}
+                Jhinthicha Sukchaoritthikrai
               </Paragraph>
-            </div>
+            </motion.div>
           </div>
         </div>
       </Col>

@@ -1,10 +1,15 @@
-import React from 'react';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
+import React from "react";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
+import Transition from "./transition/transition";
 
 const RootLayout = ({ children }: React.PropsWithChildren) => (
   <html lang="en">
     <body>
-      <AntdRegistry>{children}</AntdRegistry>
+      <div>
+        <AntdRegistry>
+          <Transition>{children}</Transition>
+        </AntdRegistry>
+      </div>
     </body>
   </html>
 );

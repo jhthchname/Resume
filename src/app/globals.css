@@ -1,5 +1,5 @@
 body {
-  background-color: #ffff
+  background: #fff;
 }
 
 .site-layout-content {
@@ -12,9 +12,20 @@ img {
   height: auto;
 }
 
-.my-custom-anchor .ant-anchor-link-title {
-  color:#0000;
+.ant-layout-header {
+  height: 64px;
+  padding: 10px 40px;
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 64px;
+  background: #fff;
+}
+
+.custom-anchor .ant-anchor-link-title {
   font-size: 18px;
+}
+
+.custom-anchor .ant-anchor-link-title:hover {
+  font-size: 20px;
 }
 
 .header .ant-anchor {
@@ -43,7 +54,7 @@ img {
   .mobileVisible {
     display: block;
   }
-  
+
   .mobileHidden {
     display: none;
   }
@@ -60,19 +71,7 @@ p {
   padding: 0 15px;
 }
 
-/* 
-block
------ 
-*/
-.block {
-  padding: 60px 0;
-  border-bottom: 1px solid #d9d9d9;
-}
-
-/* 
-title holder
-------------
-*/
+/* title holder */
 .titleHolder {
   text-align: center;
   position: relative;
@@ -82,7 +81,7 @@ title holder
 
 .titleHolder:after {
   transform: translateX(-50%);
-  content: '';
+  content: "";
   background: #1890ff;
   position: absolute;
   bottom: 0;
@@ -96,18 +95,14 @@ title holder
   margin: 0;
 }
 
-
-/* 
-about
------ 
-*/
+/* about */
 .aboutBlock .contentHolder {
   text-align: center;
-  margin: 0 0 50px;
+  margin: 0 0 70px;
 }
 
 .aboutBlock .icon {
-  font-size: 20px;
+  font-size: 16px;
   color: #1890ff;
   margin: 0 0 10px;
 }
@@ -115,8 +110,9 @@ about
 .aboutBlock .content {
   text-align: center;
 }
+
 .changeSize img {
   width: 500px;
-  height: 50px; 
+  height: 50px;
   object-fit: contain;
 }
