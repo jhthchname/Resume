@@ -13,7 +13,12 @@ const { Paragraph } = Typography;
 const Contact = () => {
   return (
     <Row gutter={[16, 16]}>
-      <Col xs={{ span: 24 }} sm={{ span: 12 }} md={{ span: 8 }}>
+      <Col
+        xs={{ span: 24 }}
+        sm={{ span: 18 }}
+        md={{ span: 16 }}
+        lg={{ span: 12 }}
+      >
         <div id="contact">
           <div
             style={{
@@ -33,7 +38,7 @@ const Contact = () => {
             >
               <Paragraph
                 style={{
-                  fontSize: "30px",
+                  fontSize: "24px",
                   fontWeight: "bold",
                   marginBottom: "20px",
                 }}
@@ -41,7 +46,7 @@ const Contact = () => {
                 <PhoneOutlined
                   style={{
                     color: "#1890ff",
-                    fontSize: "30px",
+                    fontSize: "24px",
                     marginRight: "10px",
                   }}
                 />{" "}
@@ -49,7 +54,7 @@ const Contact = () => {
               </Paragraph>
               <Paragraph
                 style={{
-                  fontSize: "30px",
+                  fontSize: "24px",
                   fontWeight: "bold",
                   marginBottom: "20px",
                 }}
@@ -57,7 +62,7 @@ const Contact = () => {
                 <MailOutlined
                   style={{
                     color: "#1890ff",
-                    fontSize: "30px",
+                    fontSize: "24px",
                     marginRight: "10px",
                   }}
                 />{" "}
@@ -65,7 +70,7 @@ const Contact = () => {
               </Paragraph>
               <Paragraph
                 style={{
-                  fontSize: "30px",
+                  fontSize: "24px",
                   fontWeight: "bold",
                   marginBottom: "20px",
                 }}
@@ -73,7 +78,7 @@ const Contact = () => {
                 <InstagramOutlined
                   style={{
                     color: "#1890ff",
-                    fontSize: "30px",
+                    fontSize: "24px",
                     marginRight: "10px",
                   }}
                 />{" "}
@@ -81,7 +86,7 @@ const Contact = () => {
               </Paragraph>
               <Paragraph
                 style={{
-                  fontSize: "30px",
+                  fontSize: "24px",
                   fontWeight: "bold",
                   marginBottom: "20px",
                 }}
@@ -89,7 +94,7 @@ const Contact = () => {
                 <FacebookOutlined
                   style={{
                     color: "#1890ff",
-                    fontSize: "30px",
+                    fontSize: "24px",
                     marginRight: "10px",
                   }}
                 />{" "}

@@ -12,14 +12,14 @@ const Profile = () => {
   });
   const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
 
-  const avatarSize = isLargeScreen ? 300 : isMediumScreen ? 200 : 150;
+  const avatarSize = isLargeScreen ? 400 : isMediumScreen ? 350 : 300;
   const titleFontSize = isLargeScreen
     ? "40px"
     : isMediumScreen
     ? "30px"
     : "20px";
   const subTitleFontSize = isLargeScreen
-    ? "20px"
+    ? "24px"
     : isMediumScreen
     ? "18px"
     : "16px";
@@ -64,7 +64,7 @@ const Profile = () => {
           >
             <Avatar
               shape="square"
-              size={300}
+              size={avatarSize}
               src="Profile.png"
               className="mb-5"
             />
@@ -86,20 +86,14 @@ const Profile = () => {
                 whiteSpace: "nowrap",
               }}
             >
-              จิณณ์ฐิชา สุขเชาว์ฤทธิไกร
-            </Title>
-            <Title
-              level={3}
-              style={{ fontSize: subTitleFontSize, color: "#1890ff" }}
-            >
               Jhinthicha Sukchaoritthikrai
             </Title>
-            <Title
-              level={4}
-              style={{ fontSize: subTitleFontSize, color: "#1890ff" }}
-            >
-              เกิดวันศุกร์ที่ 7 มีนาคม พ.ศ. 2546 อายุ 21 ปี
-            </Title>
+            <span style={{ fontSize: subTitleFontSize, color: "#1890ff" }}>
+              จิณณ์ฐิชา สุขเชาว์ฤทธิไกร
+            </span>
+            <p style={{ fontSize: subTitleFontSize, color: "#1890ff" }}>
+              เกิดวันศุกร์ที่ 7 มีนาคม พ.ศ.2546 อายุ 21 ปี
+            </p>
           </motion.div>
         </div>
       </Col>
