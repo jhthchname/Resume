@@ -106,7 +106,7 @@ const Skills = () => {
                           <img
                             src={`${item.src}.png`}
                             alt={item.title}
-                            style={{ width: "100px", height: "100px" }}
+                            style={{ width: "90px", height: "90px" }}
                           />
                         </div>
                         <h3 style={{ fontSize: "20px" }}>{item.title}</h3>
