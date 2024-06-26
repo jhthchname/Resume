@@ -19,7 +19,7 @@ const Profile = () => {
     ? "40px"
     : "30px";
   const subTitleFontSize = isLargeScreen
-    ? "40px"
+    ? "36px"
     : isMediumScreen
     ? "24px"
     : "18px";

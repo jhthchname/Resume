@@ -41,7 +41,7 @@ const Navbar = () => {
       </div>
       <div className="mobileVisible">
         <Button type="primary" onClick={showDrawer}>
-          <MenuOutlined />
+          <MenuOutlined style={{ background: "#1890ff" }} />
         </Button>
         <Drawer
           placement="right"
