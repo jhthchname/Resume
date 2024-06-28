@@ -2,18 +2,6 @@ import React from "react";
 import { Row, Col } from "antd";
 import { motion } from "framer-motion";
 
-const iconVariants = (duration) => ({
-  initial: { y: 10 },
-  animate: {
-    transition: {
-      duration: duration,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
-});
-
 const items = [
   {
     key: "1",
@@ -57,7 +45,8 @@ const Skills = () => {
           justifyContent: "center",
           width: "100vw",
           height: "100vh",
-          background: "white",
+          background:
+            "radial-gradient(125% 125% at 50% 10%, #fff 40%, #63e 100%)",
           paddingBottom: "14vh",
         }}
       >
@@ -67,7 +56,7 @@ const Skills = () => {
               whileInView={{ y: 0, opacity: 1 }}
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              style={{ fontSize: "36px" }}
+              style={{ fontSize: "32px", color: "#191970" }}
             >
               Skills
             </motion.h1>
@@ -81,15 +70,20 @@ const Skills = () => {
                 duration: 0.5,
                 ease: [0, 0.71, 0.2, 1.01],
               }}
-              style={{ fontSize: "24px" }}
+              style={{ fontSize: "24px", color: "#7B68EE" }}
             >
               มีความรู้และใช้งานเบื้องต้นสำหรับภาษา
             </motion.p>
           </div>
-          <Row gutter={[24, 16]}>
+          <Row gutter={[16, 16]}>
             {items.map((item) => {
               return (
-                <Col md={{ span: 4 }} key={item.key}>
+                <Col
+                  xs={{ span: 8 }}
+                  sm={{ span: 8 }}
+                  md={{ span: 4 }}
+                  key={item.key}
+                >
                   <motion.div
                     initial={{ y: 10 }}
                     animate={{ y: [10, -10] }}

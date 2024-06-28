@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Navbar from "./components/Navbar";
+import Backtop from "./components/Backtop";
 import "./globals.css";
 
 const { Content, Header } = Layout;
@@ -36,6 +37,7 @@ const App: React.FC = () => {
           <Skills />
         </div>
       </Content>
+      <Backtop />
     </Layout>
   );
 };

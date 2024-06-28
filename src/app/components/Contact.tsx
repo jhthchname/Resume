@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Row, Col } from "antd";
+import { Typography } from "antd";
 import {
   MailOutlined,
   PhoneOutlined,
@@ -12,99 +12,113 @@ const { Paragraph } = Typography;
 
 const Contact = () => {
   return (
-    <Row gutter={[16, 16]}>
-      <Col
-        xs={{ span: 24 }}
-        sm={{ span: 18 }}
-        md={{ span: 16 }}
-        lg={{ span: 12 }}
+    <div id="contact">
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          width: "100vw",
+          height: "100vh",
+          backgroundColor: "white",
+          backgroundImage: `linear-gradient(to right, rgb(123, 104, 238, 0.3) 1px, transparent 1px), linear-gradient(to bottom, rgb(123, 104, 238, 0.3) 1px, transparent 1px)`,
+          backgroundSize: "6rem 4rem",
+        }}
       >
-        <div id="contact">
-          <div
+        <motion.div
+          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ x: -100, opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Paragraph
             style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              width: "100vw",
-              height: "100vh",
-              background: "white",
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
             }}
           >
-            <motion.div
-              whileInView={{ x: 0, opacity: 1 }}
-              initial={{ x: -100, opacity: 0 }}
-              transition={{ duration: 0.5 }}
+            <a href="tel:0838137545" style={{ color: "#191970" }}>
+              <PhoneOutlined
+                style={{
+                  color: "#FFC0CB",
+                  fontSize: "24px",
+                  marginRight: "10px",
+                }}
+              />{" "}
+              083 813 7545
+            </a>
+          </Paragraph>
+          <Paragraph
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            <a
+              href="mailto:jhinthicha.sukc@bumail.net"
+              style={{ color: "#191970" }}
             >
-              <Paragraph
+              <MailOutlined
                 style={{
+                  color: "#FFC0CB",
                   fontSize: "24px",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
+                  marginRight: "10px",
                 }}
-              >
-                <PhoneOutlined
-                  style={{
-                    color: "#1890ff",
-                    fontSize: "24px",
-                    marginRight: "10px",
-                  }}
-                />{" "}
-                083 813 7545
-              </Paragraph>
-              <Paragraph
+              />{" "}
+              jhinthicha.sukc@bumail.net
+            </a>
+          </Paragraph>
+          <Paragraph
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            <a
+              href="https://www.instagram.com/jhthchname"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#191970" }}
+            >
+              <InstagramOutlined
                 style={{
+                  color: "#FFC0CB",
                   fontSize: "24px",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
+                  marginRight: "10px",
                 }}
-              >
-                <MailOutlined
-                  style={{
-                    color: "#1890ff",
-                    fontSize: "24px",
-                    marginRight: "10px",
-                  }}
-                />{" "}
-                jhinthicha.sukc@bumail.net
-              </Paragraph>
-              <Paragraph
+              />{" "}
+              jhthchname
+            </a>
+          </Paragraph>
+          <Paragraph
+            style={{
+              fontSize: "24px",
+              fontWeight: "bold",
+              marginBottom: "20px",
+            }}
+          >
+            <a
+              href="https://web.facebook.com/profile.php?id=100007300845854"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#191970" }}
+            >
+              <FacebookOutlined
                 style={{
+                  color: "#FFC0CB",
                   fontSize: "24px",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
+                  marginRight: "10px",
                 }}
-              >
-                <InstagramOutlined
-                  style={{
-                    color: "#1890ff",
-                    fontSize: "24px",
-                    marginRight: "10px",
-                  }}
-                />{" "}
-                jhinthicha_name
-              </Paragraph>
-              <Paragraph
-                style={{
-                  fontSize: "24px",
-                  fontWeight: "bold",
-                  marginBottom: "20px",
-                }}
-              >
-                <FacebookOutlined
-                  style={{
-                    color: "#1890ff",
-                    fontSize: "24px",
-                    marginRight: "10px",
-                  }}
-                />{" "}
-                Jhinthicha Sukchaoritthikrai
-              </Paragraph>
-            </motion.div>
-          </div>
-        </div>
-      </Col>
-    </Row>
+              />{" "}
+              Jhinthicha Sukchaoritthikrai
+            </a>
+          </Paragraph>
+        </motion.div>
+      </div>
+    </div>
   );
 };
 

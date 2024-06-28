@@ -1,55 +1,33 @@
 import React from "react";
 import { Avatar, Typography, Row, Col } from "antd";
 import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 
 const { Title } = Typography;
 
 const Profile = () => {
-  const isLargeScreen = useMediaQuery({ query: "(min-width: 992px)" });
-  const isMediumScreen = useMediaQuery({
-    query: "(min-width: 768px) and (max-width: 991px)",
-  });
-  const isSmallScreen = useMediaQuery({ query: "(max-width: 767px)" });
-
-  const avatarSize = isLargeScreen ? 400 : isMediumScreen ? 350 : 300;
-  const titleFontSize = isLargeScreen
-    ? "60px"
-    : isMediumScreen
-    ? "40px"
-    : "30px";
-  const subTitleFontSize = isLargeScreen
-    ? "36px"
-    : isMediumScreen
-    ? "24px"
-    : "18px";
-
   return (
     <Row
       gutter={[16, 16]}
       justify="center"
       align="middle"
       style={{
+        margin: "0",
+        width: "100vw",
         height: "100vh",
-        background: "white",
-        textAlign: isSmallScreen ? "center" : "left",
+        backgroundImage: 'url("pastel-sky-background.png")',
+        backgroundSize: "cover",
       }}
     >
-      <Col
-        xs={{ span: 24 }}
-        sm={{ span: 18 }}
-        md={{ span: 16 }}
-        lg={{ span: 12 }}
-      >
+      <Col xs={24} sm={20} md={16} lg={12} xl={10}>
         <div
           id="profile"
           style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            flexDirection: isSmallScreen ? "column" : "row",
-            paddingTop: isSmallScreen ? 0 : "14vh",
-            textAlign: "left",
+            flexDirection: "column",
+            paddingTop: "15vh",
+            textAlign: "center",
           }}
         >
           <motion.div
@@ -59,12 +37,20 @@ const Profile = () => {
             style={{
               display: "flex",
               alignItems: "center",
-              marginBottom: isSmallScreen ? 20 : 0,
+              justifyContent: "center",
+              marginTop: "20px",
             }}
           >
             <Avatar
               shape="square"
-              size={avatarSize}
+              size={{
+                xs: 200,
+                sm: 250,
+                md: 300,
+                lg: 300,
+                xl: 300,
+                xxl: 350,
+              }}
               src="Profile.png"
               className="mb-5"
             />
@@ -74,24 +60,23 @@ const Profile = () => {
             initial={{ x: 100, opacity: 0 }}
             transition={{ duration: 1, delay: 0 }}
             style={{
-              marginLeft: isSmallScreen ? 0 : 50,
-              marginTop: isSmallScreen ? 20 : 0,
+              marginTop: 20,
             }}
           >
             <Title
-              level={1}
+              level={2}
               style={{
-                fontSize: titleFontSize,
-                color: "#1890ff",
+                fontSize: "26px",
+                color: "#191970",
                 whiteSpace: "nowrap",
               }}
             >
               Jhinthicha Sukchaoritthikrai
             </Title>
-            <span style={{ fontSize: subTitleFontSize, color: "#1890ff" }}>
+            <span style={{ fontSize: "20px", color: "#7B68EE" }}>
               จิณณ์ฐิชา สุขเชาว์ฤทธิไกร
             </span>
-            <p style={{ fontSize: subTitleFontSize, color: "#1890ff" }}>
+            <p style={{ fontSize: "18px", color: "#7B68EE" }}>
               เกิดวันศุกร์ที่ 7 มีนาคม พ.ศ.2546 อายุ 21 ปี
             </p>
           </motion.div>
