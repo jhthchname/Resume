@@ -12,19 +12,10 @@ import "./globals.css";
 
 const { Content, Header } = Layout;
 
-const headerStyle: React.CSSProperties = {
-  background: "white",
-  backgroundColor: "transparent",
-};
-
-const layoutStyle: React.CSSProperties = {
-  background: "white",
-};
-
 const App: React.FC = () => {
   return (
-    <Layout style={layoutStyle}>
-      <Header style={headerStyle}>
+    <Layout>
+      <Header>
         <div className="ant-layout-header">
           <Navbar />
         </div>

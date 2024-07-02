@@ -35,7 +35,7 @@ const items = [
   },
 ];
 
-const Skills = () => {
+const Skills: React.FC = () => {
   return (
     <div id="skills" className="aboutBlock">
       <div
@@ -76,7 +76,7 @@ const Skills = () => {
             </motion.p>
           </div>
           <Row gutter={[16, 16]}>
-            {items.map((item) => {
+            {items.map((item, index) => {
               return (
                 <Col
                   xs={{ span: 8 }}
@@ -86,12 +86,13 @@ const Skills = () => {
                 >
                   <motion.div
                     initial={{ y: 10 }}
-                    animate={{ y: [10, -10] }}
+                    animate={{ y: [-20, 10] }}
                     transition={{
                       duration: 2.5,
                       ease: "linear",
                       repeat: Infinity,
                       repeatType: "reverse",
+                      delay: index * 1,
                     }}
                   >
                     <div className="content">

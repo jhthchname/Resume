@@ -33,10 +33,6 @@ img {
   font-size: 20px;
 }
 
-.header .ant-anchor {
-  display: flex;
-}
-
 .mobileVisible {
   display: none;
 }
@@ -88,7 +84,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
   background: rgb(227, 216, 255);
 }
 
@@ -116,7 +111,6 @@ p {
   margin: 0;
 }
 
-/* about */
 .aboutBlock .contentHolder {
   text-align: center;
   margin: 0 0 70px;
@@ -138,6 +132,7 @@ p {
   object-fit: contain;
 }
 
+/* Backtop */
 .goTop {
   width: 40px;
   height: 40px;
@@ -150,7 +145,8 @@ p {
 }
 
 .goTop:hover {
-  opacity: 0.7;
+  background-color: #ffc0cb;
+  color: rgb(135, 100, 230);
 }
 
 /* Responsive styles */

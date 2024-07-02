@@ -19,7 +19,6 @@ const Education: React.FC = () => (
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          flexDirection: "column",
           width: "100vw",
           height: "100vh",
           padding: "5vh 0",

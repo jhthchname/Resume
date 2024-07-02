@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const { Paragraph } = Typography;
 
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <div id="contact">
       <div

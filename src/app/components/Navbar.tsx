@@ -4,7 +4,7 @@ import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 
 const { Link } = Anchor;
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const [open, setOpen] = useState<boolean>(false);
 
   const showDrawer = (): void => {
@@ -54,7 +54,7 @@ const Navbar = () => {
             open={open}
             style={{
               background:
-                "linear-gradient(0deg, rgba(25, 25, 112,1) 0%, rgba(123, 104, 238,1) 23%,rgb(255, 192, 203,1) 61%, rgba(255, 255, 255,1) 100%)",
+                "linear-gradient(0deg, rgba(25, 25, 112,1) 0%, rgba(123, 104, 238,1) 30%,rgb(255, 192, 203,1) 60%, rgba(255, 255, 255,1) 100%)",
             }}
           >
             <div className="flex justify-end">
