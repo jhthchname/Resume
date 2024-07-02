@@ -37,7 +37,7 @@ const items = [
 
 const Skills: React.FC = () => {
   return (
-    <div id="skills" className="aboutBlock">
+    <div id="skills" className="skill">
       <div
         style={{
           display: "flex",
@@ -50,13 +50,12 @@ const Skills: React.FC = () => {
           paddingBottom: "14vh",
         }}
       >
-        <div className="container-fluid">
+        <div>
           <div className="titleHolder">
             <motion.h1
               whileInView={{ y: 0, opacity: 1 }}
               initial={{ y: -100, opacity: 0 }}
               transition={{ duration: 0.5 }}
-              style={{ fontSize: "32px", color: "#191970" }}
             >
               Skills
             </motion.h1>
@@ -68,7 +67,6 @@ const Skills: React.FC = () => {
               initial={{ opacity: 0, scale: 0.5 }}
               transition={{
                 duration: 0.5,
-                ease: [0, 0.71, 0.2, 1.01],
               }}
               style={{ fontSize: "24px", color: "#7B68EE" }}
             >

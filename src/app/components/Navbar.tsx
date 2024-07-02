@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="navbar-container">
       <div className="header">
         <div
           style={{
