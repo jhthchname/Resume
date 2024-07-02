@@ -48,7 +48,7 @@ const Profile: React.FC = () => {
               xxl: 350,
             }}
             src="Profile.png"
-            className="mb-5 avatar"
+            className="mb-5"
           />
         </motion.div>
         <motion.div
