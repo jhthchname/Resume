@@ -1,11 +1,11 @@
 import React from "react";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
+import App from "./page";
 
-const RootLayout = ({ children }: React.PropsWithChildren) => (
-  <html lang="en">
+const RootLayout: React.FC = () => (
+  <html>
     <body>
       <div>
-        <AntdRegistry>{children}</AntdRegistry>
+        <App />
       </div>
     </body>
   </html>
